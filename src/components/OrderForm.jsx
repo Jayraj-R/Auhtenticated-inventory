@@ -135,7 +135,7 @@ const OrderForm = ({ selectedOrder, setSelectedOrder }) => {
 						<input
 							type='text'
 							className={styles.formInput}
-							placeholder='Enter order name'
+							placeholder='Enter quantity'
 							value={order.id !== '' ? order.quantity : ''}
 							onChange={(e) => setOrder({ ...order, quantity: e.target.value })}
 						/>
