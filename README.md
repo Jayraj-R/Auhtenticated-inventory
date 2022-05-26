@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Setup
 
 1. `npm install`
-2. setup .env.local file
+2. setup ```.env.local``` file
    ```
        REACT_APP_CLENT_ID = "your_client_id"
    ```
