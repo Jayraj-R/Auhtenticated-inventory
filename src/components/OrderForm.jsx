@@ -31,8 +31,8 @@ const OrderForm = ({ selectedOrder, setSelectedOrder }) => {
 			order.quantity === ''
 		) {
 			setError('Kindly fill all the fields');
-		} else if (order.quantity <= 0) {
-			setError('Quantity must be greater than 0');
+		} else if (order.quantity <= 0 || !/^\d+$/.test(order.quantity)) {
+			setError('Enter a valid quantity');
 		} else if (selectedOrder.id === '') {
 			// Adding new order
 			setError('');
