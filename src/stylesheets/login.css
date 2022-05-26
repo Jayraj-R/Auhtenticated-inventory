@@ -1,0 +1,63 @@
+.container {
+    height: 100vh;
+    background-color: #6e5cf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f4544;
+}
+
+.paper {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    box-shadow: 2px 2px 5px rgb(81, 81, 81);
+    padding: 2rem 1rem;
+    min-width: 250px;
+    width: 40%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper__title {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.paper__subtitle {
+    font-size: 1.5rem;
+}
+
+.paper__signBtn {
+    min-width: 40%;
+    transition: all 0.2s ease-in;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    color: #167bff;
+    background: #fff;
+    border: 2px solid #167bff;
+}
+
+.paper_googleIcon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.paper__signBtn:hover {
+    background: rgba(22, 123, 255, 0.2);
+    border: 2px solid #167bff;
+}
+
+.paper__signBtn:active {
+    transform: scale(0.95);
+}
