@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [gapi-script](https://www.npmjs.com/package/gapi-script) for enabling google authentication and [@reduxjs/toolkit](https://redux-toolkit.js.org/) for state management.
 
-## [Online Demo]()
+## [Online Demo](https://super-beijinho-9bfdfc.netlify.app)
 
 ## Setup
 
