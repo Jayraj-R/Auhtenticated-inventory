@@ -18,9 +18,12 @@ const OrderDisplay = ({ orders, setSelectedOrder }) => {
 			<span className={styles.title}>Orders</span>
 
 			<section className={styles.tableSection}>
-				{/* <div className={styles.searchSection}>
-					<input className={styles.searchBar}>Search</input>
-				</div> */}
+				<div className={styles.searchSection}>
+					<div className={styles.subtitle}>
+						Click on the row to edit the order...
+					</div>
+				</div>
+
 				<table className={styles.table}>
 					<tr className={styles.tableHeaders}>
 						<th className={styles.headers}>ORDER ID</th>
@@ -31,7 +34,7 @@ const OrderDisplay = ({ orders, setSelectedOrder }) => {
 						<th className={styles.headers}></th>
 					</tr>
 					{orders.map((order, index) => {
-						if (index >= (page - 1) * 12 && index < page * 12) {
+						if (index >= (page - 1) * 11 && index < page * 11) {
 							return (
 								<tr className={styles.tableRows} key={index}>
 									<td
@@ -86,7 +89,7 @@ const OrderDisplay = ({ orders, setSelectedOrder }) => {
 					</button>
 					<button
 						className={styles.paginationBtn}
-						disabled={page === 12}
+						disabled={page === 11}
 						onClick={() => setPage(page + 1)}
 					>
 						Next
